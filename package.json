@@ -4,7 +4,22 @@
   "description": "Compare version strings.",
   "main": "version_compare.js",
   "scripts": {
-    "test": "node tests.js"
+    "pretest": "npm install",
+    "test": "tape tests/tests.js",
+    "bundle_test": "browserify tests/*.js > test_bundle.js; echo '<script src=\"test_bundle.js\"></script>' > test.html"
+  },
+  "testling": {
+      "files": "test/*.js",
+      "browsers": [
+        "ie/6..latest",
+        "chrome/22..latest",
+        "firefox/16..latest",
+        "safari/latest",
+        "opera/11.0..latest",
+        "iphone/6",
+        "ipad/6",
+        "android-browser/latest"
+      ]
   },
   "repository": {
     "type": "git",
@@ -14,13 +29,18 @@
     "version",
     "compare"
   ],
-  
-  "contributors": ["Gabriel Littman (https://github.com/gabe0x02)", 
-                   "Jon (http://stackoverflow.com/users/50079/jon)",
-                   "ripper234 (http://stackoverflow.com/users/11236/ripper234)"],
+  "contributors": [
+    "Gabriel Littman (https://github.com/gabe0x02)",
+    "Jon (http://stackoverflow.com/users/50079/jon)",
+    "ripper234 (http://stackoverflow.com/users/11236/ripper234)"
+  ],
   "license": "GNU",
   "bugs": {
     "url": "https://github.com/gabe0x02/version_compare/issues"
   },
-  "homepage": "https://github.com/gabe0x02/version_compare"
+  "homepage": "https://github.com/gabe0x02/version_compare",
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "tape": "^3.0.2"
+  }
 }
