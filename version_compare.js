@@ -74,3 +74,5 @@ function versionCompare(v1, v2, options) {
 
     return 0;
 }
+
+module.exports = versionCompare;

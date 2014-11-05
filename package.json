@@ -1,0 +1,26 @@
+{
+  "name": "version_compare",
+  "version": "0.0.0",
+  "description": "Compare version strings.",
+  "main": "version_compare.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabe0x02/version_compare.git"
+  },
+  "keywords": [
+    "version",
+    "compare"
+  ],
+  
+  "contributors": ["Gabriel Littman (https://github.com/gabe0x02)", 
+                   "Jon (http://stackoverflow.com/users/50079/jon)",
+                   "ripper234 (http://stackoverflow.com/users/11236/ripper234)"],
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/gabe0x02/version_compare/issues"
+  },
+  "homepage": "https://github.com/gabe0x02/version_compare"
+}

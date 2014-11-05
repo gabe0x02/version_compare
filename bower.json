@@ -1,0 +1,23 @@
+{
+  "name": "version_compare",
+  "main": "version_compare.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gabe0x02/version_compare",
+  "authors": [
+    "Gabriel Littman (https://github.com/gabe0x02)",
+    "Jon (http://stackoverflow.com/users/50079/jon)"
+  ],
+  "description": "Compare version strings.\"",
+  "keywords": [
+    "verison",
+    "compare"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
