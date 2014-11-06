@@ -5,7 +5,7 @@
   "main": "version_compare.js",
   "scripts": {
     "pretest": "npm install",
-    "test": "mocha tests/*.js"
+    "test": "mocha tests/mocha.js"
   },
   "testling": {
     "files": "test/*.js",
