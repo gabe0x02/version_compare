@@ -47,6 +47,11 @@ describe('My module', function() {
     vComp.lte("1.6", "1.7").should.be.true;
     vComp.lte("1.7", "1.7").should.be.true;
     vComp.lte("1.8", "1.7").should.be.false;
+    
+    vComp.matches("1.035", "1.35").should.be.true;
+    vComp.matches("1.035", "1.35.0", {zeroExtend: true}).should.be.true;
+    vComp.lt("1.035", "1.35.1").should.be.true;
+    
   
   });
 });
