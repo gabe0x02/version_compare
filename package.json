@@ -5,21 +5,20 @@
   "main": "version_compare.js",
   "scripts": {
     "pretest": "npm install",
-    "test": "tape tests/tests.js",
-    "bundle_test": "browserify tests/*.js > test_bundle.js; echo '<script src=\"test_bundle.js\"></script>' > test.html"
+    "test": "mocha tests/*.js"
   },
   "testling": {
-      "files": "test/*.js",
-      "browsers": [
-        "ie/6..latest",
-        "chrome/22..latest",
-        "firefox/16..latest",
-        "safari/latest",
-        "opera/11.0..latest",
-        "iphone/6",
-        "ipad/6",
-        "android-browser/latest"
-      ]
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -40,7 +39,10 @@
   },
   "homepage": "https://github.com/gabe0x02/version_compare",
   "devDependencies": {
-    "browserify": "^6.2.0",
-    "tape": "^3.0.2"
+    "karma": "^0.12.24",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-mocha": "^0.1.9",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
   }
 }
