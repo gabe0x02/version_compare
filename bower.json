@@ -1,7 +1,7 @@
 {
   "name": "version_compare",
   "main": "version_compare.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/gabe0x02/version_compare",
   "authors": [
     "Gabriel Littman (https://github.com/gabe0x02)",
