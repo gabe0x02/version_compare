@@ -1,6 +1,6 @@
 {
   "name": "version_compare",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compare version strings.",
   "main": "version_compare.js",
   "scripts": {
