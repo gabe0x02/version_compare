@@ -12,7 +12,7 @@
     "verison",
     "compare"
   ],
-  "license": "GNU",
+  "license": "CC-BY-SA",
   "ignore": [
     "**/.*",
     "node_modules",
