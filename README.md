@@ -27,7 +27,7 @@ vc.lte('1.0', '1.1') ==> true
 
 ####Browser
 ```html
-<script src="bower_components/dispatchr-angular-utils/services/tracker.js"></script>
+<script src="bower_components/version_compare/version_compare.js"></script>
 <script>
 VersionCompare.matches('1.0', '1.1') ==> false
 VersionCompare.matches('1.0', '1.0') ==> true
