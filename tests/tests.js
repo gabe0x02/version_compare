@@ -49,6 +49,10 @@ describe('VersionCompare', function() {
     VersionCompare.matches("1.035", "1.35.0", {zeroExtend: true}).should.be.true;
     VersionCompare.lt("1.035", "1.35.1").should.be.true;
     
-  
+    
+    VersionCompare.matches("1.35.0", "1.35.0-1").should.be.true;
+    VersionCompare.matches("1.35.0-1", "1.35.0").should.be.true;
+    VersionCompare.gt("1.35.1", "1.35.0-1").should.be.true;
+    VersionCompare.matches("1.35.1", "1.35.1-dirty").should.be.true;
   });
 });

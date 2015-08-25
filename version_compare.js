@@ -30,10 +30,25 @@
    * @license This function is in the public domain. Do what you want with it, no strings attached.
    */
   function compare(v1, v2, options) {
+      //remove anything after - 1.1.2-3-a4agbr-dirty
+      function cropDash(s){
+        var idx = s.indexOf('-');
+        if(idx !== -1) {
+          s = s.substring(0, idx);
+        }
+        return s;
+      }
+
+      v1 = cropDash(v1);
+      v2 = cropDash(v2);
       var lexicographical = options && options.lexicographical,
           zeroExtend = options && options.zeroExtend,
           v1parts = v1.split('.'),
           v2parts = v2.split('.');
+
+
+      
+
 
       function isValidPart(x) {
           return (lexicographical ? /^\d+[A-Za-z]*$/ : /^\d+$/).test(x);
@@ -100,4 +115,7 @@
   exports.lt = lt;
   exports.lte = lte;
 
+  String.prototype.endsWith = function(suffix) {
+      return this.indexOf(suffix, this.length - suffix.length) !== -1;
+  };
 })(typeof exports === 'undefined'? this.VersionCompare = {}: exports);
